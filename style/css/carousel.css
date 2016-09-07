@@ -1,6 +1,6 @@
 *{margin:0;padding:0;-webkit-tap-highlight-color: transparent;-webkit-font-smoothing:antialiased;/*字体抗锯齿*/}/*去除微信链接及按钮外框*/
 ul{list-style: none;}
-a{text-decoration: none;}
+a{text-decoration: none;} 
 #carousel{position:relative;width:100%;overflow:hidden;}
 .flex{
     display:-webkit-box;
