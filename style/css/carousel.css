@@ -1,0 +1,60 @@
+*{margin:0;padding:0;-webkit-tap-highlight-color: transparent;-webkit-font-smoothing:antialiased;/*字体抗锯齿*/}/*去除微信链接及按钮外框*/
+ul{list-style: none;}
+a{text-decoration: none;}
+#carousel{position:relative;width:100%;overflow:hidden;}
+.flex{
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:flex;
+    flex-direction: row;
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction: normal;
+    flex-wrap:nowrap;
+    -webkit-box-lines:single;
+    justify-content: center;
+    flex-pack:center;
+    -webkit-box-pack: center;
+    align-items: center;
+    flex-align:center;
+    -webkit-box-pack: center;
+}
+.flex-ver{
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:flex;
+    flex-direction: column;
+    -webkit-box-orient:vertical;
+    flex-wrap:nowrap;
+    -webkit-box-lines:single;
+    justify-content: center;
+    flex-pack:center;
+    -webkit-box-pack: center;
+    align-items: center;
+    flex-align:center;
+    -webkit-box-pack: center;
+}
+.flex-item{
+    flex: 1;
+    box-flex:1;
+    text-align:center;
+}
+.clp-item.flex {
+    position: relative;
+    flex: 0;
+    left:-100%;
+}
+.clp-item.flex h4{
+    visibility: hidden;
+}
+.clp-item button{display:none;}
+.clp-item.flex.active{flex:1;left:0;transition: left .3s ease;z-index:2;}
+.clp-item.flex.active h4{visibility: visible;}
+.clp-item.flex.act-prev{flex:0;left:-100%;transition: left .3s ease;}
+.clp-item.flex.act-next{flex:0;left:100%;transition: left .3s ease;}
+.clp-item .clp-img{width:100%;float:left;background:rgba(0,0,0,.7);}
+.clp-content{position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;}
+.navlist{position:absolute;bottom:0.9rem;right:.3rem;z-index:3;/*width:4.8rem;*/}
+.navlist .nl-item{margin-left:.3rem;background:rgba(0,0,0,.7);border-radius:0.9rem;width:.9rem;height:.9rem;}
+.navlist .nl-item.active{background:#ffffff;}
+#carousel .btn{position:absolute;left:0;top:0;bottom:0;margin:auto;z-index:3;font-weight:bolder;color:#ffffff;background:rgba(0,0,0,.4);font-size:2rem;width:2rem;height:2rem;line-height:2rem;text-align: center;}
+#right.btn{right:0;left:auto;}

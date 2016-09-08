@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title>实现移动端自适应的轮播图</title>
+    <link rel="stylesheet" href="style/css/carousel.css"/>
+</head>
+<body>
+    <div id="wrapper"></div>
+    <script src="http://cdn.bootcss.com/zepto/1.2.0/zepto.js"></script>
+    <script src="style/js/touch.js"></script>
+    <script src="style/js/zp-carousel.js"></script>
+<script>
+    //测试代码
+    Zepto(function(){
+        var a = document.getElementById("wrapper");
+        $(a).carousel({
+            //width:100,//设置carousel的宽，默认100%；
+//            height:100,//设置carousel的高，默认图片高度; 
+            item:[//设置轮播图片个数组
+                {
+                    title:"",//图片上面的文字
+                    imgSrc:"style/img/1.jpg"//图片路径
+                },
+                {
+                    title:"第二个item",
+                    imgSrc:"style/img/2.jpg"
+                },
+                {
+                    title:"第三个item",
+                    imgSrc:"style/img/3.jpg"
+                }
+            ],
+            btn:true,//左右点击按钮是否设置,true:是，false：否
+            navlist:true//导航波点是否设置,true:是，false：否
+        });
+    });    
+</script>
+</body>
+</html>
